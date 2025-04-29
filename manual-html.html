@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura Digital II - Manual de HTML</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #ffffff;
+            color: #2d3436;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #dfe6e9;
+            text-align: center;
+            padding: 20px 10px;
+            border-bottom: 2px solid #b2bec3;
+        }
+        header h1 {
+            margin: 0;
+            font-family: 'Merriweather', serif;
+            font-size: 40px;
+        }
+        nav {
+            background-color: #f1f2f6;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #dcdde1;
+        }
+        nav a {
+            display: inline-block;
+            margin: 10px 20px;
+            padding: 12px 20px;
+            background-color: #dcdde1;
+            color: #2d3436;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        nav a:hover {
+            background-color: #b2bec3;
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+        main {
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        section h2 {
+            color: #2d3436;
+            font-family: 'Merriweather', serif;
+            font-size: 28px;
+            border-bottom: 1px solid #b2bec3;
+            padding-bottom: 8px;
+        }
+        p {
+            font-size: 18px;
+            text-align: justify;
+        }
+        ul {
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        pre {
+            background-color: #f1f2f6;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            overflow-x: auto;
+        }
+        img {
+            width: 70%;
+            display: block;
+            margin: 30px auto;
+            border: 2px solid #b2bec3;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #dfe6e9;
+            border-top: 2px solid #b2bec3;
+            font-size: 16px;
+            color: #636e72;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Manual de HTML</h1>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="redes.html">Redes Sociales</a>
+    <a href="cibertn.html">Ciberseguridad</a>
+</nav>
+
+<main>
+    <section>
+        <h2>Introducción al HTML</h2>
+        <p>HTML (HyperText Markup Language) es el lenguaje estándar para la creación de documentos web. Es utilizado para estructurar contenido y definir elementos como texto, imágenes, enlaces y más. Desde su creación en 1991, HTML ha evolucionado significativamente, convirtiéndose en el pilar fundamental del desarrollo web moderno.</p>
+        <img src="img-html_introduccion.jpg" alt="Introducción a HTML">
+    </section>
+
+    <section>
+        <h2>Estructura Básica de un Documento HTML</h2>
+        <p>Un archivo HTML consta de una estructura básica que incluye los siguientes elementos:</p>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Título de la página&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+&lt;h1&gt;Encabezado principal&lt;/h1&gt;
+        &lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+        <img src="img-html_estructura.jpg" alt="Estructura básica de un documento HTML">
+    </section>
+
+    <section>
+        <h2>Elementos Fundamentales de HTML</h2>
+        <p>Los elementos en HTML permiten definir diferentes tipos de contenido. Algunos de los más comunes son:</p>
+        <ul>
+            <li><strong>&lt;h1&gt; a &lt;h6&gt;:</strong> Encabezados de distintos niveles para organizar el contenido.</li>
+            <li><strong>&lt;p&gt;:</strong> Define párrafos de texto.</li>
+            <li><strong>&lt;a&gt;:</strong> Crea enlaces hacia otras páginas o recursos.</li>
+            <li><strong>&lt;img&gt;:</strong> Inserta imágenes.</li>
+            <li><strong>&lt;ul&gt; y &lt;li&gt;:</strong> Genera listas desordenadas.</li>
+        </ul>
+        <img src="img-html_elementos.jpg" alt="Elementos clave de HTML">
+    </section>
+
+    <section>
+        <h2>Aplicaciones Avanzadas</h2>
+        <p>HTML no solo define contenido básico; también permite la integración de tecnologías como CSS y JavaScript para mejorar el diseño y la interactividad. Algunos ejemplos avanzados incluyen:</p>
+        <ul>
+            <li>Creación de formularios interactivos para recopilar datos del usuario.</li>
+            <li>Uso de elementos multimedia como audio y video.</li>
+            <li>Implementación de estructuras semánticas para mejorar la accesibilidad y el SEO.</li>
+        </ul>
+        <pre>
+&lt;form action="submit.php" method="POST"&gt;
+    &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+    &lt;input type="text" id="nombre" name="nombre"&gt;&lt;br&gt;
+    &lt;label for="email"&gt;Correo:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+    &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;
+        </pre>
+        <img src="img-html_avanzado.jpg" alt="Aplicaciones avanzadas de HTML">
+    </section>
+
+    <section>
+        <h2>Tendencias Futuras en HTML</h2>
+        <p>HTML sigue evolucionando con cada nueva versión. Las tendencias futuras incluyen una mayor integración con tecnologías como WebAssembly y el soporte mejorado para elementos interactivos como gráficos y animaciones. También se espera un enfoque más fuerte en la accesibilidad y el desarrollo web inclusivo.</p>
+        <img src="img-html_futuro.jpg" alt="Tendencias futuras en HTML">
+    </section>
+</main>
+
+<footer>
+    © 2025 Ángel Gabriel - Cultura Digital II
+</footer>
+
+</body>
+</html>
